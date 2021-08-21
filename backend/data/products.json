@@ -1,0 +1,123 @@
+[
+    {
+        "name": "Pioneer DDJ-SB3",
+        "price": "560",
+        "description": "The DDJ-SB3 is constructed from premium materials and audio circuitry. Its robust build ensures durability, while the distinctive styling and aluminium jog wheel deliver a professional feel.",
+        "ratings": 3.5,
+        "images": [{
+            "public_id": "products/ddjsb3_nvrsog",
+            "url": "https://res.cloudinary.com/dmq1eqmaf/image/upload/v1625087317/equalize.it/ddjsb3_nvrsog.jpg"
+        }],
+        "category": "Controllers",
+        "manufacturer": "Pioneer",
+        "stock": 30,
+        "numOfReviews": 5,
+        "reviews": []
+
+    },
+    {
+        "name": "Roland DJ-505",
+        "price": "599",
+        "description": "Roland moved into the DJ controller market for the first time in recent years, releasing a range of Aira branded controllers for use with Serato DJ Pro. The real selling point here is the inclusion of the ‘TR-S’ drum machine, and the DJ-505 delivers well in this regard. The sounds are the same as those in the first gen TR-8, offering digital recreations of Roland’s 909, 808 and 707 beatmakers – some of the best emulations you’ll find in modern hardware.",
+        "ratings": 2.3,
+        "images": [{
+            "public_id": "products/rolanddj-505_rfd8no",
+            "url": "https://res.cloudinary.com/dmq1eqmaf/image/upload/v1625087484/equalize.it/rolanddj-505_rfd8no.webp"
+        }],
+        "category": "Controllers",
+        "manufacturer": "Roland",
+        "stock": 40,
+        "numOfReviews": 12,
+        "reviews": []
+    },
+    {
+        "name": "Sennheiser HD 650",
+        "price": "300",
+        "description": "Sennheiser HD 650 are at the top of the open dynamic headphones. Developed from the award-winning HD 600, the HD 650 is constructed from materials enhanced for natural sound reproduction. The listener is captivated by the expressiveness and emotion conveyed, while maintaining the precision and naturalness of the sound.",
+        "ratings": 4,
+        "images": [{
+            "public_id": "products/casti-sennheiser-hd-650_t1kwhu",
+            "url": "https://res.cloudinary.com/dmq1eqmaf/image/upload/v1629549080/equalize.it/casti-sennheiser-hd-650_t1kwhu.jpg"
+        }],
+        "category": "Headphones",
+        "manufacturer": "Sennheiser",
+        "stock": 60,
+        "numOfReviews": 8,
+        "reviews": []
+    },
+    {
+        "name": "Trust Emita Plus Microphone GXT252",
+        "price": "100",
+        "description": "Whether you're streaming on YouTube, Twitch, Facebook, vlogging or podcasting, recording voice-overs or acoustic music, you'll want the sound to be of a professional standard. This professional USB studio microphone with adjustable boom and cardioid recording pattern is perfect for all your sounds. Make your voice heard!",
+        "ratings": 3.5,
+        "images": [{
+            "public_id": "trust_emita_y6uafb",
+            "url": "https://res.cloudinary.com/dmq1eqmaf/image/upload/v1629550037/equalize.it/trust_emita_y6uafb.webp"
+        }],
+        "category": "Microphones",
+        "manufacturer": "Emita",
+        "stock": 37,
+        "numOfReviews": 2,
+        "reviews": []
+    },
+    {
+        "name": "KRK Rokit 8 G4 Black",
+        "price": "350",
+        "description": "The KRK ROKIT RP8 G4 (Generation 4) professional Bi-amp monitor captures musical and sonic creativity at a whole new level in the industry, EHP graphic EQ with 25 settings helps you condition your acoustic environment offering new levels of versatility in a studio monitor.Fit drivers made with Kevlar ensure the same sonic integrity at all frequencies.A scientifically designed, front-ported speaker enclosure provides exceptional extension and precision, punch and flexibility in room positioning.",
+        "ratings": 5,
+        "images": [{
+            "public_id": "products/rokit8_togpw3",
+            "url": "https://res.cloudinary.com/dmq1eqmaf/image/upload/v1629550034/equalize.it/rokit8_togpw3.jpg"
+        }],
+        "category": "Speakers",
+        "manufacturer": "KRK",
+        "stock": 100,
+        "numOfReviews": 30,
+        "reviews": []
+    },
+    {
+        "name": "Audio Technica AT-LP120X USB BK",
+        "price": "400",
+        "description": "The Audio Technica AT-LP120X is a professional stereo pick-up with USB output for direct connection to your computer.",
+        "ratings": 15,
+        "images": [{
+            "public_id": "products/audio-technica-at-lp120x-usb-bk_dfm3mk",
+            "url": "https://res.cloudinary.com/dmq1eqmaf/image/upload/v1629550265/equalize.it/audio-technica-at-lp120x-usb-bk_dfm3mk.jpg"
+        }],
+        "category": "Turntables",
+        "manufacturer": "Audio Technica",
+        "stock": 173,
+        "numOfReviews": 80,
+        "reviews": []
+    },
+    {
+        "name": "Yamaha MG 12 XU",
+        "price": "620",
+        "description": "Yamaha MG12XU, 12 Channel Mixer, 6 Mic Inputs (XLR/1/4 Jack) with +48V Phantompower (Channel 1-4 with Compressor), 3  Band EQ, High-Pass Filter and 26dB Pad Switch, built in FX with 24 Parameters, 4 Stereo Inputs (1/4 Jack) with 2 Band EQ, XLR Out, Group Bus Out, 2 Aux for all Channels, USB with 2 In/Outputs (compatible with iPad version 2 or higher, camera connection kit is required) XLR Out, Cubase AI DAW Download Code is inclusive, dimensions 244 x 71 x 294mm, weight 2,1 Kg.",
+        "ratings": 13,
+        "images": [{
+            "public_id": "products/mixer-analog-yamaha-mg-12-xu143135_ycdbf7",
+            "url": "https://res.cloudinary.com/dmq1eqmaf/image/upload/v1629550412/equalize.it/mixer-analog-yamaha-mg-12-xu143135_ycdbf7.jpg"
+        }],
+        "category": "Mixers",
+        "manufacturer": "Yamaha",
+        "stock": 15,
+        "numOfReviews": 20,
+        "reviews": []
+    },
+    {
+        "name": "Adam Hall 4Star XLRm-TRS 3m",
+        "price": "20",
+        "description": "Balanced audio cable with REAN connectors, large stereo jack to XLR tata, ideal for audio interface connection to studio monitors.",
+        "ratings": 13,
+        "images": [{
+            "public_id": "products/adam-hall-4star-xlrm-trs-3m-id18336-sizex840-sizey600-type1_pso3e9",
+            "url": "https://res.cloudinary.com/dmq1eqmaf/image/upload/v1629550557/equalize.it/adam-hall-4star-xlrm-trs-3m-id18336-sizex840-sizey600-type1_pso3e9.jpg"
+        }],
+        "category": "Accessories",
+        "manufacturer": "Adam Hall",
+        "stock": 170,
+        "numOfReviews": 70,
+        "reviews": []
+    }
+]
