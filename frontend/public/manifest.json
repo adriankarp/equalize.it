@@ -1,6 +1,7 @@
 {
   "short_name": "equalize.it",
   "name": "equalize.it",
+  "description": "Progressive Web App using MERN stack",
   "icons": [
     {
       "src": "favicon.ico",
@@ -18,8 +19,10 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": "/",
+  "start_url": "./",
+  "scope": "/",
   "display": "minimal-ui",
   "theme_color": "#1b4d89",
-  "background_color": "#ffffff"
+  "background_color": "#ffffff",
+  "orientation": "any"
 }
