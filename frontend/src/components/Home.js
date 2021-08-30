@@ -49,8 +49,9 @@ const Home = ({ match }) => {
     if (error) {
       return alert.error(error);
     }
-
-    dispatch(getProducts(keyword, currentPage, price, category, rating));
+    setTimeout(() => {
+      dispatch(getProducts(keyword, currentPage, price, category, rating));
+    }, 500);
   }, [dispatch, alert, error, keyword, currentPage, price, category, rating]);
 
   function setCurrentPageNo(pageNumber) {
