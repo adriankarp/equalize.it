@@ -72,7 +72,7 @@ const Header = () => {
                   />
                 </figure>
 
-                <span className="d-none d-lg-block ">{user && user.name}</span>
+                <span>{user && user.name}</span>
               </Link>
 
               <div
