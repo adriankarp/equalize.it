@@ -57,6 +57,11 @@ const initialState = {
       ? JSON.parse(localStorage.getItem("shippingInfo"))
       : {},
   },
+  //  cand userul acceseaza pagina, cauta in localstorage
+  //  daca e logat deja(persistenta)
+  user: localStorage.getItem("user")
+    ? JSON.parse(localStorage.getItem("user"))
+    : {},
 };
 
 const middlware = [thunk];

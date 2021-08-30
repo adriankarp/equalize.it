@@ -64,6 +64,8 @@ const Cart = ({ history }) => {
                           alt="Laptop"
                           height="90"
                           width="115"
+                          //  object-fit: contain iti face ca imaginea sa pastreze ratia
+                          style={{ objectFit: "contain" }}
                         />
                       </div>
 

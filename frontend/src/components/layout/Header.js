@@ -23,7 +23,7 @@ const Header = () => {
 
   return (
     <Fragment>
-      <nav className="navbar row">
+      <nav className="navbar row sticky-top">
         <div className="col-12 col-md-3">
           <div className="navbar-brand">
             <Link to="/">
@@ -53,7 +53,7 @@ const Header = () => {
             </span>
           </Link>
 
-          {user ? (
+          {user.name !== undefined ? (
             <div className="ml-4 dropdown d-inline">
               <Link
                 to="#!"

@@ -5,7 +5,6 @@ import {
   REGISTER_USER_REQUEST,
   REGISTER_USER_SUCCESS,
   REGISTER_USER_FAIL,
-  LOAD_USER_REQUEST,
   LOAD_USER_SUCCESS,
   LOAD_USER_FAIL,
   UPDATE_PASSWORD_REQUEST,
@@ -39,18 +38,31 @@ import {
   LOGOUT_SUCCESS,
   LOGOUT_FAIL,
   CLEAR_ERRORS,
+  SET_STRIPE_KEY,
+  SET_STRIPE_FAIL,
 } from "../constants/userConstants";
 
-export const authReducer = (state = { user: {} }, action) => {
+const authInitialState = {
+  user: {},
+  loading: false,
+  error: null,
+  stripeKey: null,
+};
+
+export const authReducer = (state = authInitialState, action) => {
   switch (action.type) {
     case LOGIN_REQUEST:
     case REGISTER_USER_REQUEST:
-    case LOAD_USER_REQUEST:
       return {
+        ...state,
         loading: true,
         isAuthenticated: false,
       };
-
+    case SET_STRIPE_KEY:
+      return {
+        ...state,
+        stripeKey: action.payload,
+      };
     case LOGIN_SUCCESS:
     case REGISTER_USER_SUCCESS:
     case LOAD_USER_SUCCESS:
@@ -63,19 +75,22 @@ export const authReducer = (state = { user: {} }, action) => {
 
     case LOGOUT_SUCCESS:
       return {
+        ...state,
         loading: false,
         isAuthenticated: false,
-        user: null,
+        user: {},
       };
 
     case LOAD_USER_FAIL:
       return {
+        ...state,
         loading: false,
         isAuthenticated: false,
-        user: null,
+        user: {},
         error: action.payload,
       };
 
+    case SET_STRIPE_FAIL:
     case LOGOUT_FAIL:
       return {
         ...state,
@@ -88,7 +103,7 @@ export const authReducer = (state = { user: {} }, action) => {
         ...state,
         loading: false,
         isAuthenticated: false,
-        user: null,
+        user: {},
         error: action.payload,
       };
 

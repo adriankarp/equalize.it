@@ -7,7 +7,7 @@ import MetaData from "../layout/MetaData";
 
 import { useAlert } from "react-alert";
 import { useDispatch, useSelector } from "react-redux";
-import { login, clearErrors } from "../../actions/userActions";
+import { login, clearErrors, setStripeKey } from "../../actions/userActions";
 
 const Login = ({ history, location }) => {
   const [email, setEmail] = useState("");
@@ -25,6 +25,7 @@ const Login = ({ history, location }) => {
   useEffect(() => {
     if (isAuthenticated) {
       history.push(redirect);
+      dispatch(setStripeKey);
     }
 
     if (error) {

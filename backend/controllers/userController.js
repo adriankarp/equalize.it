@@ -7,15 +7,13 @@ const sendEmail = require("../utils/sendEmail");
 const crypto = require("crypto");
 const cloudinary = require("cloudinary");
 
-
 // Register a user   =>  /api/v1/register
 exports.registerUser = catchAsyncErrors(async (req, res, next) => {
-
   const result = await cloudinary.v2.uploader.upload(req.body.avatar, {
-        folder: 'avatars',
-        width: 150,
-        crop: "scale"
-    })
+    folder: "avatars",
+    width: 150,
+    crop: "scale",
+  });
 
   const { name, email, password } = req.body;
 
@@ -24,8 +22,8 @@ exports.registerUser = catchAsyncErrors(async (req, res, next) => {
     email,
     password,
     avatar: {
-        public_id: result.public_id,
-        url: result.secure_url,
+      public_id: result.public_id,
+      url: result.secure_url,
     },
   });
 
@@ -69,7 +67,9 @@ exports.forgotPassword = catchAsyncErrors(async (req, res, next) => {
   await user.save({ validateBeforeSave: false });
 
   // Create reset password url
-  const resetURL = `${req.protocol}://${req.get('host')}/password/reset/${resetToken}`;
+  const resetURL = `${req.protocol}://${req.get(
+    "host"
+  )}/password/reset/${resetToken}`;
 
   const message = `Your password reset token is:\n\n${resetURL}\n\nIf you have not requested this please ignore.`;
 
@@ -138,11 +138,10 @@ exports.getUserProfile = catchAsyncErrors(async (req, res, next) => {
   const user = await User.findById(req.user.id);
 
   res.status(200).json({
-      success: true,
-      user
-  })
+    success: true,
+    user,
+  });
 });
-
 
 // Update / Change password   =>   /api/v1/password/update
 exports.updatePassword = catchAsyncErrors(async (req, res, next) => {
@@ -168,23 +167,23 @@ exports.updateProfile = catchAsyncErrors(async (req, res, next) => {
   };
 
   // Update avatar
-    if (req.body.avatar !== '') {
-        const user = await User.findById(req.user.id)
+  if (req.body.avatar !== "") {
+    const user = await User.findById(req.user.id);
 
-        const image_id = user.avatar.public_id;
-        const res = await cloudinary.v2.uploader.destroy(image_id);
+    const image_id = user.avatar.public_id;
+    const res = await cloudinary.v2.uploader.destroy(image_id);
 
-        const result = await cloudinary.v2.uploader.upload(req.body.avatar, {
-            folder: 'avatars',
-            width: 150,
-            crop: "scale"
-        })
+    const result = await cloudinary.v2.uploader.upload(req.body.avatar, {
+      folder: "avatars",
+      width: 150,
+      crop: "scale",
+    });
 
-        newUserData.avatar = {
-            public_id: result.public_id,
-            url: result.secure_url
-        }
-    }
+    newUserData.avatar = {
+      public_id: result.public_id,
+      url: result.secure_url,
+    };
+  }
 
   // eslint-disable-next-line no-unused-vars
   const user = await User.findByIdAndUpdate(req.user.id, newUserData, {
