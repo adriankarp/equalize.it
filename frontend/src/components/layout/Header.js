@@ -71,7 +71,8 @@ const Header = () => {
                     className="rounded-circle"
                   />
                 </figure>
-                <span>{user && user.name}</span>
+
+                <span className="d-none d-lg-block ">{user && user.name}</span>
               </Link>
 
               <div

@@ -1,19 +1,16 @@
 /* eslint-disable no-unused-vars */
 import React, { Fragment } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
   return (
     <Fragment>
-      <footer id="sticky-footer" className="py-4 mt-3 text-white">
+      <footer id="sticky-footer" className="py-4 mt-3 text-white sticky-bottom">
         <div className="container text-center">
           <h5>2021 Copyright &copy; equalize.it</h5>
           <p>This application was developed in educational purposes</p>
         </div>
         <div className="container text-center">
           <div className="template">
-            {" "}
             <button
               type="button"
               className="btn btn-social-icon btn-linkedin btn-rounded"

@@ -21,10 +21,15 @@ const App = () => {
   //  am mutat router-ul in fisierul lui propriu pentru clean code
   //  Header-ul e pasat ca si children si afisat in router ca children
   return (
-    <div className="App">
-      <AppRouter stripeKey={stripeKey}>
-        <Header />
-      </AppRouter>
+    <div
+      className="App"
+      style={{ maxHeight: "100vh", overflowY: "scroll", overflowX: "hidden" }}
+    >
+      <div style={{ minHeight: "80vh" }}>
+        <AppRouter stripeKey={stripeKey}>
+          <Header />
+        </AppRouter>
+      </div>
       <Footer />
     </div>
   );
