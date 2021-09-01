@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const errorMiddleware = require("./middlewares/errors");
-//import sslRedirect from 'heroku-ssl-redirect';
+var sslRedirect = require('heroku-ssl-redirect');
 
 const cookieParser = require("cookie-parser");
 const bodyParser = require("body-parser");
@@ -11,7 +11,7 @@ const fileUpload = require("express-fileupload")
 const path = require('path')
 
 // enforcing HTTPS redirect
-//app.use(sslRedirect());
+app.use(sslRedirect());
 
 if (process.env.NODE_ENV !== 'PRODUCTION') require('dotenv').config({ path: 'backend/config/config.env' })
 
