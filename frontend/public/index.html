@@ -28,6 +28,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
     <title>equalize.it</title>
+
+    <script>
+      const domain1 = "www.equalizeit.herokuapp.com";
+      const domain2 = "equalizeit.herokuapp.com";
+      const host = window.location.host;
+      if ((domain === host || domain2 === host) && (window.location.protocol !== "https:")){
+        window.location.href = "https://www.equalizeit.herokuapp.com";
+      }
+      </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
