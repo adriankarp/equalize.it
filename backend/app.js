@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const errorMiddleware = require("./middlewares/errors");
-var sslRedirect = require('heroku-ssl-redirect');
+import sslRedirect from 'heroku-ssl-redirect';
 
 const cookieParser = require("cookie-parser");
 const bodyParser = require("body-parser");
