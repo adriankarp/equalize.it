@@ -1,7 +1,7 @@
 # equalize.it (MERN E-commerce App)
 
 >Progressive Web App build using MERN stack (MongoDB, Express.js, React, Node.js)
-
+>This application was developed as a proof-of-concept for my Bachelor's Thesis
 
 ### Install Dependencies (Frontend)
 
