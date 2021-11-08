@@ -2,6 +2,10 @@
 
 >Progressive Web App implemented using MERN stack (MongoDB, Express.js, React, Node.js)
 
+<div align="center">
+[![5ENOFV.md.png](https://iili.io/5ENOFV.md.png)](https://freeimage.host/i/5ENOFV)
+</div>
+
 ## This application was developed as a proof-of-concept for my Bachelor's Thesis
 
 The main goal of my bachelor's thesis was to research and implement a progressive web application, to showcase its features.
