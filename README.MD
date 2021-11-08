@@ -4,7 +4,7 @@
 
 <div align="center">
 [![5ENOFV.md.png](https://iili.io/5ENOFV.md.png)](https://freeimage.host/i/5ENOFV)
- <img src="https://freeimage.host/i/5ENOFV" alt="homepage component" />
+ <img src="https://iili.io/5ENOFV.md.png" alt="homepage component" />
 </div>
 
 ## This application was developed as a proof-of-concept for my Bachelor's Thesis
