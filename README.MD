@@ -3,8 +3,7 @@
 >Progressive Web App implemented using MERN stack (MongoDB, Express.js, React, Node.js)
 
 <div align="center">
-[![5ENOFV.md.png](https://iili.io/5ENOFV.md.png)](https://freeimage.host/i/5ENOFV)
- <img src="https://iili.io/5ENOFV.md.png" alt="homepage component" />
+ <img src="https://iili.io/5ENOFV.md.png" alt="homepage component" width="80vw"/>
 </div>
 
 ## This application was developed as a proof-of-concept for my Bachelor's Thesis
