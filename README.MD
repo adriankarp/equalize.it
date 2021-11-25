@@ -1,41 +1,93 @@
-# equalize.it (MERN stack E-commerce App)
 
->Progressive Web App implemented using MERN stack (MongoDB, Express.js, React, Node.js)
+# equalize.it
 
-<div align="center">
- <img src="https://iili.io/5ENOFV.md.png" alt="homepage component" />
-</div>
+MERN stack progressive e-commerce web application
 
-## This application was developed as a proof-of-concept for my Bachelor's Thesis
 
-The main goal of my bachelor's thesis was to research and implement a progressive web application, to showcase its features.
+## Screenshots
 
-My choice of application was an E-commerce App, with focus on selling audio equipment.
+![App Screenshot](https://iili.io/5ENOFV.md.png)
 
-### Technologies
 
-The backend part is implemented using Node.js and Express.js. As helper services I used cloudinary for images upload and manipulation, and Stripe for payment processing.
+## Tech Stack
 
-The frontend part is implemented using React and Redux. For the service worker, which enables progressive features, I used the one that comes out-of-box from create-react-app, without further modifications.
+**Client:** React, Redux, Bootstrap, MDBootstrap, Service Worker
 
-### Install Dependencies (Backend)
+**Server:** Node, Express, MongoDB (Mongoose)
 
+**APIs** Cloudinary, Stripe
+
+
+## Environment Variables
+
+To run this project, you will need to add some environment variables.
+
+A list can be found in ```./backend/config/config.env```
+
+## Run Locally
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/adriankarp/equalize.it.git
 ```
-npm i
+
+Go to the project directory
+
+```bash
+  cd equalize.it```
+
+Install server dependencies
+
+```bash
+  npm install
 ```
 
-### Install Dependencies (Frontend)
+Go to the client directory
 
-```
-cd frontend
-npm i
+```bash
+  cd frontend
 ```
 
-### Seed Database
+Install client dependencies
 
-Use the following command to put some dummy data in database.
-Run it in root folder
+```bash
+  npm install
+```
 
+Start both frontend and backend servers, starting from root folder
+
+```bash
+  npm start
+  cd backend
+  npm start
 ```
-npm run seeder
+
+Use the following command to put some dummy data in database. Run it in root folder
+
+```bash
+  npm run seeder
 ```
+
+
+
+## Authors
+
+- [@adriankarp](https://github.com/adriankarp)
+
+
+## Lessons Learned
+
+While implementing this project I enforced my knowledge in the following areas:
+
+- What implies implementing a full-stack web project
+- Progressive web applications
+
+
+## Feedback
+
+If you have any feedback, please reach out @ karp.adrian@protonmail.com
+
+
