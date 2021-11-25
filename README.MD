@@ -24,7 +24,6 @@ To run this project, you will need to add some environment variables.
 
 A list can be found in ```./backend/config/config.env```
 
-## Run Locally
 
 ## Run Locally
 
