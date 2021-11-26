@@ -36,7 +36,8 @@ Clone the project
 Go to the project directory
 
 ```bash
-  cd equalize.it```
+  cd equalize.it
+```
 
 Install server dependencies
 
