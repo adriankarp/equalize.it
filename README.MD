@@ -6,7 +6,7 @@ MERN stack progressive e-commerce web application
 
 ## Screenshots
 
-<img src="https://iili.io/5ENOFV.md.png" style="margin: 0 auto" />
+[![App screenshot](https://i.postimg.cc/634gxS2B/image.png)](https://postimg.cc/62wYdMfP)
 
 
 ## Tech Stack
